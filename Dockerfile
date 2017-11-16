@@ -1,7 +1,7 @@
 FROM docker.io/centos
 MAINTAINER root squash (nathan@rootsquash.com)
 
-COPY ./usr/bin/container-entrypoint /usr/bin/
+COPY ./container-entrypoint /usr/bin/
 
 RUN rm -f /etc/localtime && \
     ln -s /usr/share/zoneinfo/US/Central /etc/localtime && \
